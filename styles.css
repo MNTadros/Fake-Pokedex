@@ -1,0 +1,20 @@
+.poke-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.poke-card:hover {
+    transform: translateY(-5px);
+}
+
+.poke-image {
+    height: 380px;
+}
+
+.container-side-by-side {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
