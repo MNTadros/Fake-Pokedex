@@ -8,8 +8,9 @@
     <link rel="icon" href="pokedex.png">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-    <div class="mx-auto bg-red-600"> <!-- start of navbar -->
+
+<body class="bg-red-600">
+    <div class="mx-auto bg-red-600">
         <div class="flex justify-between items-center py-4">
             <div class="flex text-3xl font-bold">
                 <a href="index.html">
@@ -18,72 +19,18 @@
             <a href="index.html" class="text-slate-50 pl-5 text-center mt-3">Pokedex</a>
             </div>
         <hr></hr>
+        </div>
     </div> <!-- end of navbar -->
 
  <!-- Pokemon Section -->
- <div class="container mx-auto py-8">
+ <div class="container mx-auto py-8 bg-red-600">
     <h1 class="text-4xl font-bold text-stone-900 justify-center text-center mb-8">Pokemon</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Pokemon Item 1 -->
-        <div class="poke-card" style="height: 450px;">
-            <img src="1.png" class="w-full poke-image object-cover rounded-t-lg">
-            <div class="p-4 flex items-center">
-                <div class='container-side-by-side bg-gradient-to-r from-amber-500 to-orange-500 py-1 px-2 rounded-lg' style="width: 200px;">
-                    <h3 class="text-lg font-semibold mr-3">Articlaw</h3>
-                    <p class="inline-block text-sm mb-1 px-2 py-1 bg-amber-400 text-white rounded mr-2">Rock</p>
-                    <p class="inline-block text-sm mb-1 px-4 py-1 bg-blue-400 text-white rounded">Ice</p>
-                </div>
-                <a class="inline-block bg-blue-300 text-white ml-auto py-2 rounded mono px-3">Read More</a>
-            </div>
-        </div>
-        <!-- End Pokemon Item 1 -->
-
-        <!-- Pokemon Item 2 -->
-        <div class="poke-card" style="height: 450px;">
-            <img src="2.png" class="w-full poke-image object-cover rounded-t-lg">
-            <div class="p-4 flex items-center">
-                <div class='container-side-by-side bg-gradient-to-r from-amber-500 to-orange-500 py-1 px-2 rounded-lg' style="width: 215px;">
-                    <h3 class="text-lg font-semibold mr-3">Alchlob</h3>
-                    <p class="inline-block text-sm mb-1 px-2 py-1 bg-slate-500 text-white rounded mr-2">Steel</p>
-                    <p class="inline-block text-sm mb-1 px-4 py-1 bg-cyan-500 text-white rounded">Water</p>
-                </div>
-                <a class="inline-block bg-blue-300 text-white ml-auto py-2 rounded mono px-3">Read More</a>
-            </div>
-        </div>
-        <!-- End Pokemon Item 2 -->
-
-        <!-- <!-- Pokemon Item 3 -->
-        <!-- <div class="poke-card" style="height: 450px;">
-            <img src="1.png" class="w-full poke-image object-cover rounded-t-lg">
-            <div class="p-4 flex items-center">
-                <div class='container-side-by-side bg-gradient-to-r from-amber-500 to-orange-500 py-1 px-2 rounded-lg' style="width: 200px;">
-                    <h3 class="text-lg font-semibold mr-3">Articlaw</h3>
-                    <p class="inline-block text-sm mb-1 px-2 py-1 bg-amber-400 text-white rounded mr-2">Rock</p>
-                    <p class="inline-block text-sm mb-1 px-4 py-1 bg-blue-400 text-white rounded">Ice</p>
-                </div>
-                <a class="inline-block bg-blue-300 text-white ml-auto py-2 rounded mono px-3">Read More</a>
-            </div>
-        </div> -->
-        <!-- End Pokemon Item 3 -->
-
-        <!-- Pokemon Item 4 -->
-        <!-- <div class="poke-card" style="height: 450px;">
-            <img src="1.png" class="w-full poke-image object-cover rounded-t-lg">
-            <div class="p-4 flex items-center">
-                <div class='container-side-by-side bg-gradient-to-r from-amber-500 to-orange-500 py-1 px-2 rounded-lg' style="width: 200px;">
-                    <h3 class="text-lg font-semibold mr-3">Articlaw</h3>
-                    <p class="inline-block text-sm mb-1 px-2 py-1 bg-amber-400 text-white rounded mr-2">Rock</p>
-                    <p class="inline-block text-sm mb-1 px-4 py-1 bg-blue-400 text-white rounded">Ice</p>
-                </div>
-                <a class="inline-block bg-blue-300 text-white ml-auto py-2 rounded mono px-3">Read More</a>
-            </div>
-        </div>  -->
-        <!-- End Pokemon Item 4 -->
-
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="pokemon-container">
+        <script src="pokemon.js"></script> <!-- Reference to the external JavaScript file -->
     </div>
 </div>
 <!-- End Pokemon Section -->
+
 </body>
 
 </html>
