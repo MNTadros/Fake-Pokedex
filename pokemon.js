@@ -2,17 +2,17 @@ const pokemonData = [
     {
         name: "Articlaw",
         types: ["Rock", "Ice"],
-        image: "1.png"
+        image: "articlaw.png"
     },
     {
         name: "Alchlob",
         types: ["Steel", "Water"],
-        image: "2.png"
+        image: "alchlob.png"
     },
     {
         name: "Impactadon",
         types: ["Rock", "Ghost"],
-        image: "3.png"
+        image: "impactadon.png"
     },
     // Add more Pokémon data here
 ];
@@ -109,6 +109,7 @@ pokemonData.forEach(pokemon => {
     const readMore = document.createElement('a');
     readMore.classList.add('inline-block', 'bg-blue-300', 'text-white', 'ml-auto', 'py-2', 'rounded', 'mono', 'px-3');
     readMore.textContent = 'Read More';
+    readMore.href = `${pokemon.name.toLowerCase()}.html`;
 
     cardBody.appendChild(typeContainer);
     cardBody.appendChild(readMore);

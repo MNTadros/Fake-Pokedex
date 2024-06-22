@@ -2,17 +2,17 @@ const evolutionsData = [
     {
         name: "Alchlob",
         types: ["Steel", "Water"],
-        image: "2.png"
+        image: "alchlob.png"
     },
     {
         name: "Silwhale",
         types: ["Steel", "Water"],
-        image: "2.1.png"
+        image: "alchlob.1.png"
     },
     {
         name: "Illunormous",
         types: ["Steel", "Water"],
-        image: "2.2.png"
+        image: "alchlob.2.png"
     }
 ];
 
