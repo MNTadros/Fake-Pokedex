@@ -2,17 +2,17 @@ const pokemonData = [
     {
         name: "Articlaw",
         types: ["Rock", "Ice"],
-        image: "articlaw.png"
+        image: "imgs/articlaw.png"
     },
     {
         name: "Alchlob",
         types: ["Steel", "Water"],
-        image: "alchlob.png"
+        image: "imgs/alchlob.png"
     },
     {
         name: "Impactadon",
         types: ["Rock", "Ghost"],
-        image: "impactadon.png"
+        image: "imgs/impactadon.png"
     },
     // Add more Pokémon data here
 ];
