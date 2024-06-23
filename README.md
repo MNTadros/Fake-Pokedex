@@ -7,3 +7,6 @@ TO DO
 - Add Type icons to each pokemon
 - Make a main page
 - Change look to a pokedex style
+- Add abilities
+- Add Moveset (possibly)
+- Add a sidebar with "Random Pokemon", "Types" , "Filters" options
