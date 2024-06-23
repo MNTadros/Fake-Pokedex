@@ -10,9 +10,39 @@ const pokemonData = [
         image: "imgs/alchlob.png"
     },
     {
+        name: "Silwhale",
+        types: ["Steel", "Water"],
+        image: "imgs/alchlob.1.png"
+    },
+    {
+        name: "Illunormous",
+        types: ["Steel", "Water"],
+        image: "imgs/alchlob.2.png"
+    },
+    {
         name: "Impactadon",
         types: ["Rock", "Ghost"],
         image: "imgs/impactadon.png"
+    },
+    {
+        name: "Spacetean",
+        types: ["Steel", "Fighting"],
+        image: "imgs/spacetean.png"
+    },
+    {
+        name: "Colobster",
+        types: ["Steel", "Fighting"],
+        image: "imgs/spacetean.1.png"
+    },
+    {
+        name: "Grimwar",
+        types: ["Ghost"],
+        image: "imgs/grimwar.png"
+    },
+    {
+        name: "Silantis",
+        types: ["Dragon","Psychic"],
+        image: "imgs/silantis.png"
     },
     // Add more Pokémon data here
 ];
