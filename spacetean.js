@@ -1,25 +1,20 @@
 const pokemonData = [
     {
-        name: "Alchlob",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.png",
-        description: "Alchlob is a Pokémon that is known for its strong steel armor and its ability to control water. It evolves into two different forms based on its environment and training aswell as what it eats on a day to day basis."
+        name: "Spacetean",
+        types: ["Steel", "Fighting"],
+        image: "imgs/spacetean.png",
+        description: "Spacetean is a Pokémon known for its strong steel armor and its prowess in fighting. It excels in close combat and is revered for its resilience and adaptability in various environments, it evolves into Colobster."
     },
     {
-        name: "Silwhale",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.1.png",
-        description: "Silwhale, the evolved form of Alchlob, retains its steel and water attributes, but grows larger and more powerful. It is recognized for its resilience and intelligence, making it a formidable force in both land and sea battles."
+        name: "Colobster",
+        types: ["Steel", "Fighting"],
+        image: "imgs/spacetean.1.png",
+        description: "Colobster, the evolved form of Spacetean, retains its steel and fighting attributes while growing larger and more powerful. It is known for its strategic prowess and relentless determination in battles."
     },
-    {
-        name: "Illunormous",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.2.png",
-        description: "Illunormous, the final evolution of Alchlob, exemplifies mastery over its steel and water abilities. Its towering presence and imposing strength make it a legendary protector of oceans and a beacon of hope for those in need."
-    },
+
 ];
 
-const pokemonContainer = document.getElementById('alchlob-container');
+const pokemonContainer = document.getElementById('spacetean-container');
 
 pokemonData.forEach(pokemon => {
     const card = document.createElement('div');
@@ -48,8 +43,8 @@ pokemonData.forEach(pokemon => {
             case "Steel":
                 typeBadge.classList.add('bg-slate-500');
                 break;
-            case "Water":
-                typeBadge.classList.add('bg-cyan-500');
+            case "Fighting":
+                typeBadge.classList.add('bg-orange-800');
                 break;
             default:
                 typeBadge.classList.add('bg-gray-400');

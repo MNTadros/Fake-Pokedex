@@ -1,25 +1,14 @@
 const pokemonData = [
     {
-        name: "Alchlob",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.png",
-        description: "Alchlob is a Pokémon that is known for its strong steel armor and its ability to control water. It evolves into two different forms based on its environment and training aswell as what it eats on a day to day basis."
+        name: "Impactadon",
+        types: ["Rock", "Ghost"],
+        image: "imgs/impactadon.png",
+        description: "Impactadon is a fearsome Pokémon with a ghostly presence and formidable rock abilities. It is known for its imposing stature and its ability to phase through solid objects."
     },
-    {
-        name: "Silwhale",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.1.png",
-        description: "Silwhale, the evolved form of Alchlob, retains its steel and water attributes, but grows larger and more powerful. It is recognized for its resilience and intelligence, making it a formidable force in both land and sea battles."
-    },
-    {
-        name: "Illunormous",
-        types: ["Steel", "Water"],
-        image: "imgs/alchlob.2.png",
-        description: "Illunormous, the final evolution of Alchlob, exemplifies mastery over its steel and water abilities. Its towering presence and imposing strength make it a legendary protector of oceans and a beacon of hope for those in need."
-    },
+
 ];
 
-const pokemonContainer = document.getElementById('alchlob-container');
+const pokemonContainer = document.getElementById('impactadon-container');
 
 pokemonData.forEach(pokemon => {
     const card = document.createElement('div');
@@ -45,11 +34,11 @@ pokemonData.forEach(pokemon => {
         const typeBadge = document.createElement('p');
         typeBadge.classList.add('inline-block', 'text-sm', 'mb-1', 'px-2', 'py-1', 'text-white', 'rounded', 'mr-2', 'whitespace-nowrap');
         switch(type) {
-            case "Steel":
-                typeBadge.classList.add('bg-slate-500');
+            case "Rock":
+                typeBadge.classList.add('bg-amber-400');
                 break;
-            case "Water":
-                typeBadge.classList.add('bg-cyan-500');
+            case "Ghost":
+                typeBadge.classList.add('bg-indigo-400');
                 break;
             default:
                 typeBadge.classList.add('bg-gray-400');
