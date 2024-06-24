@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grimwar - Pokedex</title>
+    <link rel="icon" href="imgs/pokedex.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-red-600">
+    <div class="mx-auto"> <!-- start of navbar -->
+        <div class="flex justify-between items-center py-4">
+            <div class="flex text-3xl font-bold">
+                <a href="index.html">
+                    <img src="imgs/pokedex.png" width="50" height="50" class="ml-2">
+                </a>
+                <a href="index.html" class="text-slate-50 pl-5 text-center mt-3">Pokedex</a>
+            </div>
+            <hr>
+        </div>
+    </div> <!-- end of navbar -->
+
+    <!-- Main Section -->
+    <div class="container mx-auto py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="grimwar-container">
+            <script src="grimwar.js"></script> <!-- External JavaScript file for evolutions -->
+        </div>
+
+        <!-- Go Back Button -->
+        <div class="text-center mt-4">
+            <a href="index.html" class="inline-block bg-blue-300 hover:bg-blue-400 text-white py-2 px-4 rounded">
+                Go Back
+            </a>
+        </div>
+        <!-- End Go Back Button -->
+
+    </div>
+    <!-- End Main Section -->
+
+</body>
+</html>

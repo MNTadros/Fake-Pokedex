@@ -1,18 +1,18 @@
 const pokemonData = [
     {
-        name: "Impactadon",
-        types: ["Rock", "Ghost"],
-        image: "imgs/impactadon.png",
-        description: "Impactadon is a fearsome Pokémon with a ghostly presence and formidable rock abilities. It is known for its imposing stature and its ability to phase through solid objects."
-    },
+        name: "Grimwar",
+        types: ["Ghost"],
+        image: "imgs/grimwar.png",
+        description: "Grimwar is a mysterious Pokémon that embodies the eerie essence of the spirit realm. With its ghostly presence, it casts a haunting aura wherever it roams. Legends speak of Grimwar as a guardian of lost souls, guiding them through the afterlife with its enigmatic powers. Its spectral form and otherworldly abilities make it both feared and revered among those who encounter it."
 
+    },
 ];
 
-const pokemonContainer = document.getElementById('impactadon-container');
+const pokemonContainer = document.getElementById('grimwar-container');
 
 pokemonData.forEach(pokemon => {
     const card = document.createElement('div');
-    card.classList.add('poke-card', 'bg-white', 'rounded-lg', 'shadow-lg', 'overflow-hidden', 'transition-transform', 'duration-300', 'hover:translate-y-[-5px]',"bg-slate-300");
+    card.classList.add('poke-card', 'bg-white', 'rounded-lg', 'shadow-lg', 'overflow-hidden', 'transition-transform', 'duration-300', 'hover:translate-y-[-5px]', "bg-slate-300");
 
     const image = document.createElement('img');
     image.src = pokemon.image;
@@ -31,8 +31,8 @@ pokemonData.forEach(pokemon => {
     typeContainer.appendChild(name);
 
     pokemon.types.forEach(type => {
-        const typeBadge = document.createElement('p');
-        typeBadge.classList.add('inline-block', 'text-sm', 'mb-1', 'px-2', 'py-1', 'text-white', 'rounded', 'mr-2', 'whitespace-nowrap');
+        const typeBadge = document.createElement('div');
+        typeBadge.classList.add('inline-block', 'text-sm', 'mb-1', 'px-2', 'py-1', 'text-white', 'rounded', 'mr-2', 'whitespace-nowrap', 'flex', 'items-center');
 
         const typeIcon = document.createElement('img');
         typeIcon.src = `types/${type}.png`;
@@ -41,11 +41,8 @@ pokemonData.forEach(pokemon => {
         const typeText = document.createElement('p');
         typeText.textContent = type;
 
-        
+
         switch(type) {
-            case "Rock":
-                typeBadge.classList.add('bg-amber-400');
-                break;
             case "Ghost":
                 typeBadge.classList.add('bg-indigo-400');
                 break;
@@ -53,6 +50,7 @@ pokemonData.forEach(pokemon => {
                 typeBadge.classList.add('bg-gray-400');
                 break;
         }
+
         typeBadge.appendChild(typeIcon);
         typeBadge.appendChild(typeText);
         typeContainer.appendChild(typeBadge);

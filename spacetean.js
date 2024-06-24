@@ -37,8 +37,16 @@ pokemonData.forEach(pokemon => {
     typeContainer.appendChild(name);
 
     pokemon.types.forEach(type => {
-        const typeBadge = document.createElement('p');
-        typeBadge.classList.add('inline-block', 'text-sm', 'mb-1', 'px-2', 'py-1', 'text-white', 'rounded', 'mr-2', 'whitespace-nowrap');
+        const typeBadge = document.createElement('div');
+        typeBadge.classList.add('inline-flex', 'items-center', 'text-sm', 'mb-1', 'px-2', 'py-1', 'text-white', 'rounded', 'mr-2', 'whitespace-nowrap');
+
+        const typeIcon = document.createElement('img');
+        typeIcon.src = `types/${type}.png`;
+        typeIcon.classList.add('mr-1', 'w-4', 'h-4'); // Adjust the size as needed
+
+        const typeText = document.createElement('p');
+        typeText.textContent = type;
+
         switch(type) {
             case "Steel":
                 typeBadge.classList.add('bg-slate-500');
@@ -50,7 +58,8 @@ pokemonData.forEach(pokemon => {
                 typeBadge.classList.add('bg-gray-400');
                 break;
         }
-        typeBadge.textContent = type;
+        typeBadge.appendChild(typeIcon);
+        typeBadge.appendChild(typeText);
         typeContainer.appendChild(typeBadge);
     });
 
